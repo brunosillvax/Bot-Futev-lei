@@ -63,7 +63,7 @@ npm install
 
 # Configurar variáveis de ambiente
 cp .env.example .env
-# Edite o arquivo .env com suas configurações
+# Edite o arquivo .env com seus tokens reais
 
 # Iniciar o bot
 npm start
@@ -71,16 +71,28 @@ npm start
 
 ### Configuração do .env
 
-```env
-# Telegram Tokens
-TELEGRAM_RECREIO_TOKEN=seu_token_recreio
-TELEGRAM_BANGU_TOKEN=seu_token_bangu
-TELEGRAM_NOTIFICATION_CHAT_IDS=id1,id2,id3
+**⚠️ IMPORTANTE**: Nunca commite o arquivo `.env` com tokens reais!
 
-# WhatsApp Groups
-WHATSAPP_RECREIO_GROUP=120363208643524067@g.us
-WHATSAPP_BANGU_GROUP=120363419544998924@g.us
-```
+1. **Copie o template**:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. **Configure suas variáveis**:
+   ```env
+   # Telegram Tokens (obtenha em @BotFather)
+   TELEGRAM_RECREIO_TOKEN=seu_token_recreio_aqui
+   TELEGRAM_BANGU_TOKEN=seu_token_bangu_aqui
+   TELEGRAM_NOTIFICATION_CHAT_IDS=id1,id2,id3
+   
+   # WhatsApp Groups
+   WHATSAPP_RECREIO_GROUP=120363208643524067@g.us
+   WHATSAPP_BANGU_GROUP=120363419544998924@g.us
+   ```
+
+3. **Obtenha os tokens**:
+   - Telegram: Acesse [@BotFather](https://t.me/BotFather)
+   - WhatsApp Groups: Adicione o bot ao grupo e veja os logs
 
 ## 🎯 Comandos Disponíveis
 
@@ -135,10 +147,19 @@ logs/
 
 - ✅ **Rate Limiting**: Máximo 10 requests/minuto por usuário
 - ✅ **Validação de Entrada**: Todos os dados são validados
-- ✅ **Tokens Seguros**: Armazenados em variáveis de ambiente
+- ✅ **Tokens Seguros**: Armazenados apenas em variáveis de ambiente
+- ✅ **Arquivo .env.example**: Template seguro para configuração
+- ✅ **Gitignore Protegido**: Arquivos .env nunca são commitados
 - ✅ **Backup Automático**: Diário às 23:00
 - ✅ **Sessões Timeout**: 30 minutos de inatividade
 - ✅ **Logs Detalhados**: Rastreamento completo de operações
+
+### 🚨 Importante sobre Tokens
+
+- **NUNCA** commite tokens reais no código
+- **SEMPRE** use o arquivo `.env.example` como template
+- **RENOVE** tokens se acidentalmente expostos
+- **MANTENHA** o arquivo `.env` no `.gitignore`
 
 ## 🚀 Scripts Disponíveis
 
