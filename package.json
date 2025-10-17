@@ -1,0 +1,27 @@
+{
+  "name": "bot-futevolei",
+  "version": "2.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["whatsapp", "bot", "futevolei", "telegram"],
+  "author": "CT LK Futevôlei",
+  "license": "ISC",
+  "description": "Bot de atendimento automático para CT LK Futevôlei",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "axios": "^1.10.0",
+    "dotenv": "^16.4.5",
+    "link-preview-js": "^3.1.0",
+    "node-schedule": "^2.1.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "qrcode-terminal": "^0.12.0",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
