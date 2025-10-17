@@ -15,11 +15,11 @@ const CONFIG = {
 
     // Telegram
     telegram: {
-        recreioToken: process.env.TELEGRAM_RECREIO_TOKEN || '7637453097:AAEFHT9RYnK28Jp5ZeE_-tDhrTdr14QeSQ4',
-        banguToken: process.env.TELEGRAM_BANGU_TOKEN || '8127747217:AAFDEUkK4k-ZZkwC29bUamz1m7u9KIWkOAA',
+        recreioToken: process.env.TELEGRAM_RECREIO_TOKEN,
+        banguToken: process.env.TELEGRAM_BANGU_TOKEN,
         notificationChatIds: process.env.TELEGRAM_NOTIFICATION_CHAT_IDS 
             ? process.env.TELEGRAM_NOTIFICATION_CHAT_IDS.split(',')
-            : ['1116351270', '6161350194', '1516313109']
+            : []
     },
 
     // WhatsApp Groups
